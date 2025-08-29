@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>服務資訊</title>
+    <style>
+        /* 基本重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f2f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+        }
+
+        /* 卡片樣式 */
+        .card {
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        }
+
+        .icon {
+            font-size: 36px;
+        }
+
+        .card p {
+            font-size: 16px;
+            color: #333;
+        }
+
+        /* 顏色區分 */
+        .electric { background-color: #ff6b6b; color: #fff; }
+        .shopping { background-color: #1e90ff; color: #fff; }
+        .moving { background-color: #ffa500; color: #fff; }
+
+        /* LINE 聊天按鈕 */
+        .chat-button {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 18px 0;
+            background-color: #00c300;
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 12px;
+            text-decoration: none;
+            margin-top: 30px;
+            transition: background-color 0.2s;
+        }
+
+        .chat-button:hover {
+            background-color: #009900;
+        }
+
+        /* 響應式調整 */
+        @media (max-width: 400px) {
+            .card {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .icon {
+                font-size: 30px;
+            }
+
+            .card p {
+                font-size: 14px;
+            }
+
+            .chat-button {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚗 服務資訊</h1>
+
+        <div class="card electric">
+            <div class="icon">⚡</div>
+            <p>接電服務：150$ 起跳，視距離而定</p>
+        </div>
+
+        <div class="card shopping">
+            <div class="icon">🛒</div>
+            <p>代購服務：150$ 起跳，視距離及商品而定</p>
+        </div>
+
+        <div class="card moving">
+            <div class="icon">📦</div>
+            <p>微搬家服務：視距離以及物品多寡而定</p>
+        </div>
+
+        <a href="https://lin.ee/7HYZkdM" target="_blank" class="chat-button">
+            💬 立即使用 LINE 聊天
+        </a>
+    </div>
+</body>
+</html>
